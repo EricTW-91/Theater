@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Seats</title>
+    <link rel="stylesheet" href="./css/seatsStyle.css">
+</head>
+<body>
+    <script src="./seats.js"></script>
+    <div class="movieContainer">
+        <label for="selectMovie">Select a movie: </label>
+        <select name="selectMovie" id="selectMovie">
+            <option value="0">The dark knight</option>
+            <option value="1">The Lord Of Rings</option>
+            <option value="2">Harry Potter</option>
+            <option value="3">Schindler's List</option>
+            <option value="4">Fight Club</option>
+        </select>
+
+    </div>
+
+    <ul class="showCase">
+        <li>
+            <div class="seat"></div>
+            <span>Empty</span>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <span>Selected</span>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <span>Occupied</span>
+        </li>
+    </ul>
+
+    <div class="seatContainer">
+        <div class="screen"></div>
+        <div class="seatArea">
+            <div class="seat occupied" id="s00" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s01" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s02" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s03" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s04" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s05" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s06" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s07" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s08" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s09" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s10" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s11" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s12" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s13" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s14" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s15" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s16" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s17" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s18" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s19" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s20" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s21" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s22" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s23" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s24" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s25" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s26" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s27" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s28" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s29" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s30" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s31" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s32" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s33" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s34" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s35" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s36" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s37" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s38" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s39" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s40" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s41" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s42" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s43" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s44" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s45" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s46" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s47" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s48" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s49" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s50" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s51" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s52" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s53" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s54" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s55" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s56" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s57" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s58" onclick="seatSelected(this)"></div>
+            <div class="seat" id="s59" onclick="seatSelected(this)"></div>
+        </div>
+        <h3 class="resultText">
+            You've selected 
+            <span id="seatCount">0</span>
+            seats for a price of $
+            <span id="total">0</span>
+        </h3>
+
+    </div>
+
+
+</body>
+</html>
