@@ -104,76 +104,78 @@ footer {
 }
 
 main {
-  width: 85vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+  width: 80vw;
   margin: 10vh auto;
 }
 
-main #now_playing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
+main figure {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
 }
 
-main #now_playing .movie {
-  margin: 28px;
+main #poster {
+  width: 375px;
+  height: 562.5px;
 }
 
-main #now_playing img {
-  width: 250px;
-  height: 375px;
-  border: solid 1px black;
+main h2 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  font-size: 80px;
 }
 
-main #now_playing img:hover {
-  cursor: pointer;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+main p {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
-main #pageNumbers {
-  width: 100%;
+main div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+main div button {
   height: 50px;
-  margin: 5vh 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main #pageNumbers button {
-  border: none;
-  border-radius: 12px;
+  width: 150px;
   font-size: 30px;
-  margin: 0 30px;
-  width: 70px;
-  height: 50px;
+  margin-left: 50px;
   background-color: #2469ff;
   color: white;
+  border: none;
+  border-radius: 12px;
   cursor: pointer;
 }
-/*# sourceMappingURL=style.css.map */
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+/*# sourceMappingURL=detailStyle.css.map */

@@ -1,0 +1,58 @@
+header{
+    height: 50px;
+    width: 100vw;
+    padding: 0 3vw;
+    background-color: rgba($color: #000549, $alpha: 1.0);
+    @include flexCenter(space-between);
+
+
+    nav{
+        width: 30%;
+        @include flexCenter(space-between);
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            transition-duration: 300ms;
+            transform: translateY(-2px);
+        }
+    }
+    button{
+        width: 100px;
+        height: 40px;
+        border: none;
+        background-color: rgba($color: #000549, $alpha: 1.0);
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.logo{
+    color: white;
+}
+
+.darkMode{
+    background-color: $bgc_D;
+    color: $textColor_D;   
+}
+
+.subTitle{
+    // color: #FFF;
+    margin: 5vh 0 5vh 2vw;
+}
+
+body{
+    background-color: $bgc_L;
+    color: $textColor_L;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+    background-color: rgba($color: #000549, $alpha: 1.0);
+    width: 100vw;
+    height: 150px;
+    color: white;
+    @include flexCenter(center);
+}

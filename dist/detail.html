@@ -5,26 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XXX Theater</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detailStyle.css">
 </head>
 <body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/detail.js"></script>
 
     <header>
         <h1 class="logo">XXX Theater</h1>
         <nav>
             <a href="./index.html">Home</a>
-            <a href="" onclick="openTicketPage()">Tickets</a>
+            <a href="./seats.html">Tickets</a>
             <a href="">Location</a>
         </nav>
-        <button id="darkModeBt" onclick="darkMode()">Dark mode</button>
+        <button id="darkModeBt" onclick="darkMode()">Dark mode</button>    
     </header>
     <main>
-        <h2 class="subTitle">Now playing</h2>
-        <div id="now_playing"></div>
-        <div id="pageNumbers"></div>
+        <figure></figure>
+        <h2 id="title"></h2>
+        <p id="overview"></p>
+        <div>
+            <button id="trailerBt" onclick="getTrailer()">Trailer</button>
+            <button id="ticketBt" onclick="openTicketPage()">Ticket</button>
+        </div>
+        
+
+
     </main>
+
+    <section onclick="closeTrailer()">
+        
+    </section>
+
     <footer>&copy;2021 Eric Tseng</footer>
     
 </body>

@@ -5,6 +5,111 @@
   padding: 0;
 }
 
+header {
+  height: 50px;
+  width: 100vw;
+  padding: 0 3vw;
+  background-color: #000549;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav a:hover {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+header button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #000549;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logo {
+  color: white;
+}
+
+.darkMode {
+  background-color: #000;
+  color: #fff;
+}
+
+.subTitle {
+  margin: 5vh 0 5vh 2vw;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  background-color: #000549;
+  width: 100vw;
+  height: 150px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,9 +121,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: black;
   height: 100vh;
   width: 100vw;
@@ -26,7 +128,7 @@ body {
 }
 
 body .movieContainer {
-  margin: 2vh auto;
+  margin: 10vh auto;
 }
 
 body ul {
@@ -60,9 +162,8 @@ body ul li div {
 body .seatContainer {
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  margin: 2vh auto 2vh auto;
+  margin: 2vh auto 5vh auto;
   width: 30%;
-  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,8 +180,9 @@ body .seatContainer {
 }
 
 body .seatContainer .screen {
+  margin-top: 5vh;
   background-color: #ffff;
-  height: 50px;
+  height: 80px;
   width: 400px;
   margin-bottom: 2vh;
   -webkit-transform: rotateX(-45deg);
@@ -97,6 +199,7 @@ body .seatContainer .seatArea {
   width: 400px;
   height: 200px;
   grid-gap: 15px;
+  margin: 5vh 0;
 }
 
 body .seat {
